@@ -16,6 +16,7 @@ html
     each favsize in [32, 96, 16]
       link(rel='icon', type='image/png', sizes=favsize + 'x' + favsize, href=appconfig.host + '/favicons/favicon-' + favsize + 'x' + favsize + '.png')
     link(rel='manifest', href=appconfig.host + '/manifest.json')
+    link(rel='stylesheet', type='text/css', href='/css/index.css')
 
     //- Site Lang
     script.
