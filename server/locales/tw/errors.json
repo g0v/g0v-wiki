@@ -1,0 +1,30 @@
+{
+  "alreadyexists": "該頁面已經存在！",
+  "debugmsg": "除錯訊息",
+  "fileexists": "文件 {{path}} 已經存在。",
+  "forbidden": "被禁止",
+  "forbiddendetail": "抱歉，你暫時無權限瀏覽此頁面。",
+  "generic": "喔喔！出問題了",
+  "invalidaction": "行為無效。",
+  "invaliddestfolder": "無效的目標文件夾！",
+  "invalidfiletype": "無效的文件類型。",
+  "invalidfolder": "無效的文件夾。",
+  "invalidoperation": "無效的操作！",
+  "invalidpath": "無效的頁面路徑。",
+  "invaliduserid": "無效的使用者編號",
+  "newpasswordtooshort": "新密碼太短！",
+  "notexist": "頁面 {{path}} 不存在！",
+  "notexistdetail": "建立該頁面？",
+  "parentinvalid": "上層頁面是無效的文件。",
+  "parentisroot": "上層頁面是根目錄。",
+  "remotetoolarge": "遠端文件太大！",
+  "reservedname": "你不能用這個名字建立文檔，因為這個是系統保留字",
+  "savefailed": "無法儲存文件",
+  "starterfailed": "無法載入啟動內容！",
+  "unauthorized": "未經授權",
+  "actions": {
+    "create": "建立",
+    "gohome": "首頁",
+    "loginas": "登入為..."
+  }
+}

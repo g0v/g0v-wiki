@@ -7,7 +7,7 @@ paths:
 uploads:
   maxImageFileSize: 3
   maxOtherFileSize: 100
-lang: zh
+lang: tw
 langRtl: false
 public: true
 auth:
@@ -49,13 +49,15 @@ auth:
     clientSecret: APP_SECRET_KEY
     resource: 00000002-0000-0000-c000-000000000000
     tenant: YOUR_TENANT.onmicrosoft.com
-sessionSecret: 37ee1ffb77edbdbc4d4e1f3f46057d411cbc25fcf826048defa10066abf82b7a
+sessionSecret: 309e9ff6e7c1e3792b42f46aca7df105f6fec4724df5a83561a174fb52950afc
 db: 'mongodb://localhost:27017/wiki'
 git:
-  url: git@github.com:g0v/g0v-wiki-data.git
+  url: 'git@github.com:g0v/g0v-wiki-data.git'
   branch: master
   auth:
     type: ssh
+    username: ''
+    password: ''
     privateKey: /srv/web/secret/g0v-wiki-id_rsa
     sslVerify: true
   showUserEmail: true

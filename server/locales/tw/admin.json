@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "displayname": "顯示名稱",
+    "displaynameexample": "John Smith",
+    "email": "Email",
+    "lastprofileupdate": "最近的個人檔案更新",
+    "membersince": "會員始於",
+    "password": "密碼",
+    "passwordverify": "驗證密碼",
+    "provider": "供應者",
+    "savechanges": "存檔",
+    "subtitle": "個人資訊",
+    "tfa": "雙重驗證",
+    "tfadisable": "停用雙重驗證",
+    "tfadisabled": "已停用",
+    "tfaenable": "啟用雙重驗證",
+    "tfaenabled": "已啟用"
+  },
+  "stats": {
+    "subtitle": "全站統計",
+    "entries": "頁面",
+    "uploads": "上傳",
+    "users": "使用者"
+  },
+  "settings": {
+    "subtitle": "管理"
+  },
+  "system": {
+    "subtitle": "系統資訊與工具",
+    "systemversion": "系统版本",
+    "currentversion": "目前版本",
+    "latestversion": "最新版本",
+    "upgrade": "升级",
+    "reinstall": "重新安裝目前版本",
+    "versioncheckfailed": "無法確認最新版本，請稍後再試。",
+    "administrativetools": "管理工具",
+    "flushcache": "清空暫存區並重建索引",
+    "flushcachetext": "若內容或搜尋結果已過期，或是未包含最新內容，可藉由清空暫存區來解決。",
+    "flushcachebtn": "清空並重建",
+    "resetaccounts": "將系統帳號重設為預設值",
+    "resetaccountstext": "該系統帳號( 如 Guest ) 將被重設為預設值",
+    "resetaccountsbtn": "重設系統帳號",
+    "flushsessions": "更新所有線上使用者的工作階段",
+    "flushsessionstext": "所有使用者都會被登出，您也會受到影響！",
+    "flushsessionsbtn": "清空工作階段",
+    "hostinfo": "主機資訊",
+    "os": "作業系统",
+    "nodeversion": "Node.js版本",
+    "hostname": "主機名",
+    "cores": "CPU核心",
+    "totalmem": "總記憶體",
+    "cwd": "工作目錄"
+  },
+  "theme": {
+    "subtitle": "變更 wiki 的外觀",
+    "primarycolor": "主色",
+    "primarycolordesc": "用於導覽、標題與超連結等",
+    "altcolor": "替代顏色",
+    "altcolordesc": "用於邊欄 ( 暗色 )",
+    "footercolor": "頁尾列顏色",
+    "footercolordesc": "用於頁尾列 ( 淺色 )",
+    "codeblock": {
+      "title": "程式碼方塊",
+      "dark": "使用黑色主題",
+      "colorize": "將程式碼上色"
+    },
+    "savechanges": "儲存",
+    "reset": "還原預設值"
+  },
+  "users": {
+    "createauthorize": "建立 / 授權帳號",
+    "subtitle": "使用者與權限管理",
+    "name": "名字",
+    "email": "Email",
+    "provider": "提供者",
+    "createdon": "建立於",
+    "updatedon": "更新於",
+    "returntousers": "返回帳號",
+    "edituser": "編輯帳號",
+    "uniqueid": "使用者編號"
+  }
+}

@@ -92,7 +92,10 @@ langs:
     name: English
   -
     id: zh
-    name: Chinese - 中文
+    name: Chinese - 中文(簡體)
+  -
+    id: tw
+    name: Chinese - 中文(正體)
   -
     id: nl
     name: Dutch - Nederlands
