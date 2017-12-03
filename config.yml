@@ -1,5 +1,5 @@
 title: g0v wiki
-host: 'http://g0v.wiki'
+host: 'https://g0v.wiki'
 port: 3000
 paths:
   repo: ./repo
@@ -49,7 +49,7 @@ auth:
     clientSecret: APP_SECRET_KEY
     resource: 00000002-0000-0000-c000-000000000000
     tenant: YOUR_TENANT.onmicrosoft.com
-sessionSecret: cd006bc28314f4ad6ee341b121e450f8caf778a0c17c5c7e572a5b42ec94248a
+sessionSecret: 1f56663c2a3765593e007745ca8b5e61e33b1d6301906394eb5656b0845cce40
 db: 'mongodb://localhost:27017/wiki'
 git:
   url: 'git@github.com:g0v/g0v-wiki-data.git'
