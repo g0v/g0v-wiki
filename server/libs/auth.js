@@ -111,8 +111,8 @@ module.exports = function (passport) {
       }
     }, function(u, p, cb) {
       p.email = p.username;
+      p.provider = "g0v";
       db.User.processProfile(p).then(user => {
-        throw new Error(u,p,user);
         return cb(null, user) || true
       }).catch((err) => {
 	return cb(err, null) || true
