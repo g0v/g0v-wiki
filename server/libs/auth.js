@@ -3,6 +3,7 @@
 /* global appconfig, appdata, db, lang, winston */
 
 const fs = require('fs')
+const openidClient = require("openid-client")
 
 module.exports = function (passport) {
   // Serialization user methods
@@ -86,6 +87,37 @@ module.exports = function (passport) {
         })
       }
       ))
+  }
+
+  // g0v
+  if (appconfig.auth.g0v && appconfig.auth.g0v.enabled) {
+    const domain = appconfig.auth.g0v.domain;
+    var issuer = new openidClient.Issuer({
+      issuer: domain,
+      authorization_endpoint: domain + "/openid/auth",
+      token_endpoint: domain + "/openid/token",
+      userinfo_endpoint: domain + "/openid/me",
+      jwks_uri: domain + "/openid/certs"
+    });
+    /* 設定 Jothon App 與網站接口 */
+    passport.use("g0v", new openidClient.Strategy({
+      client: new issuer.Client({
+        client_id: appconfig.auth.g0v.clientId,
+        client_secret: appconfig.auth.g0v.clientSecret,
+      }),
+      params: {
+	redirect_uri: appconfig.host + "/login/g0v/callback",
+	scope: "openid email"
+      }
+    }, function(u, p, cb) {
+      p.email = p.username;
+      db.User.processProfile(p).then(user => {
+        throw new Error(u,p,user);
+        return cb(null, user) || true
+      }).catch((err) => {
+	return cb(err, null) || true
+      });
+    }));
   }
 
   // Facebook

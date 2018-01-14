@@ -44,6 +44,9 @@ html(data-logic='login')
             span= t('auth:loginusingalt')
           else
             span= t('auth:loginusing')
+          button.g0v(onclick='window.location.assign("/login/g0v")',style="background:#222;border-color:#333;")
+            img(src="/images/m/logo.svg",style="width:32px;display:inline;vertical-align:-10px;")
+            span(style="font-family:consolas") G0V SIGNIN
           if appconfig.auth.microsoft && appconfig.auth.microsoft.enabled
             button.ms(onclick='window.location.assign("/login/ms")')
               i.icon-windows2
